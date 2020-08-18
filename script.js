@@ -13,3 +13,9 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+function MyCtrl($scope, $ionicNavBarDelegate) {
+  $scope.goBack = function() {
+    $ionicNavBarDelegate.back();
+  };
+}

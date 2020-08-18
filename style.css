@@ -31,9 +31,11 @@ font-family: 'Indie Flower';font-size: 22px;
 
 h1 {
   font-style: italic;
-  color: #373fff;
-  font-family: 'Raleway', sans-serif;
+  color: #a9a9a9;
+  font-family: 'Raleway', sans-serif;  
+  text-align: center;
 }
+
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -50,19 +52,16 @@ w3-container {
   max-height: auto;
 }
 
-img {
-  height: 24vh;
-  margin: 30px;
-}
-
 .footer {
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #00A176;
   color: white;
   text-align: center;
+  background-color: white; 
+  background-image: linear-gradient(to right, #424242, #212121); 
+  
 }
 .stuffgoeshehe {height: 100%;}
 
@@ -81,7 +80,7 @@ img {
 }
 
 .active {
-  background-color: #00A176;
+  background-color: #00;
   color: white;
 }
 
@@ -186,5 +185,181 @@ img {
 
 .grad{
   background-color: white; 
+  background-image: linear-gradient(to right, #212121, #424242); 
+}
+
+  
+w3-col {
+  align: center;
+  width: 20%;
+  height: 100%;
+  padding: 15px;
+}
+
+w3-row {
+  content: "";
+  clear: both;
+  display: table;
+  width: 20%;
+  height: 100%;
+}
+
+div.gallery {
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  float:left 
+}
+
+.footer-purple {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #760296;
+  color: white;
+  text-align: center;
+  
+}
+.grad{
+  background-color: white; 
   background-image: linear-gradient(to right, #424242, #212121); 
 }
+
+.navbar-purple {
+  background-color: #760296;
+  overflow: hidden;
+}
+
+.navbar-green {
+  background-color: #00773a;
+  overflow: hidden;
+}
+
+.navbar-orangey-red {
+  background-color: #ff7200;
+  overflow: hidden;
+}
+
+.navbar-pinky {
+  background-color: #ff0071;
+  overflow: hidden;
+}
+
+.navbar-yellow {
+  background-color: #ffe300;
+  overflow: hidden;
+}
+
+.navbar-blue{
+  background-color: #009ce1;
+  overflow: hidden;
+}
+
+.footer-yellow {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffe300;
+  color: white;
+  text-align: center;
+  
+}
+
+.footer-blue {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #009ce1;
+  color: white;
+  text-align: center;
+  
+}
+
+.footer-pinky {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff0071;
+  color: white;
+  text-align: center;
+  
+}
+
+.footer-orangey-red {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff7200;
+  color: white;
+  text-align: center;
+  
+}
+
+.footer-green {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #00773a;
+  color: white;
+  text-align: center;
+  
+}
+
+.container {
+  height: 225px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.container img{
+    height: 10vw;
+    width: 10vw;
+  
+}
+
