@@ -39,10 +39,15 @@ h1 {
 
 p {
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 a {
   font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 20px;
 }
 
 w3-container {
@@ -363,3 +368,34 @@ img {
   
 }
 
+div.gallery {
+  margin: 5px;
+  border: 0px solid #ccc;
+  float: left;
+  width: 180px;
+  
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  
+}
+
+div.gallery img {
+   display: flex;
+  justify-content: center;
+ height: 10vw;
+  width: 10vw;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+  font-size: 1vw;
+}
+  
+  html[data-platform='iPhone'] body {
+  background-color: red;
+}
+  
+  
