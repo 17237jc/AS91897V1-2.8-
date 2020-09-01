@@ -31,7 +31,7 @@ font-family: 'Indie Flower';font-size: 22px;
 
 h1 {
   font-style: italic;
-  color: #a9a9a9;
+  color: #000000;
   font-family: 'Raleway', sans-serif;  
   text-align: center;
 }
@@ -40,6 +40,13 @@ h1 {
 p {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+p2{
+  font-family: 'Open Sans', sans-serif;
+  t
 }
 
 a {
@@ -79,19 +86,23 @@ w3-container {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 24px 28px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 24px;
+
 }
 
 .active {
   background-color: #00;
   color: white;
+  float: left;
 }
 
 .topnav .icon {
   display: none;
+
 }
+
 
 .dropdown {
   float: right;
@@ -99,11 +110,11 @@ w3-container {
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 24px;
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 24px 28px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -134,6 +145,7 @@ w3-container {
   background-color: #555;
   color: white;
   font-family: 'Open Sans', sans-serif;
+
 }
 
 .dropdown-content a:hover {
@@ -209,22 +221,6 @@ w3-row {
   height: 100%;
 }
 
-div.gallery {
-  margin: 15px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
 .responsive {
   padding: 0 6px;
   float: left;
@@ -250,9 +246,6 @@ div.gallery img {
   clear: both;
 }
 
-img {
-  float:left 
-}
 
 .footer-purple {
   position: fixed;
@@ -355,7 +348,7 @@ img {
 }
 
 .container {
-  height: 225px;
+  height: 300px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -363,8 +356,8 @@ img {
 }
 
 .container img{
-    height: 10vw;
-    width: 10vw;
+    height: 12vw;
+    width: 12vw;
   
 }
 
@@ -373,6 +366,9 @@ div.gallery {
   border: 0px solid #ccc;
   float: left;
   width: 180px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
   
 }
 
@@ -382,6 +378,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
+  height: 225px;
+  width: 100%;
    display: flex;
   justify-content: center;
  height: 10vw;
@@ -389,13 +387,31 @@ div.gallery img {
 }
 
 div.desc {
-  padding: 5px;
-  text-align: center;
-  font-size: 1vw;
+  padding: 4px;
+  font-size: 1vh;
 }
-  
-  html[data-platform='iPhone'] body {
-  background-color: red;
+
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  z-index:1000;
 }
-  
-  
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
