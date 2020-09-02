@@ -42,6 +42,7 @@ p {
   text-align: center;
   margin-left: 50px;
   margin-top: 50px;
+  margin-right: 50px;
 }
 
 p2{
@@ -51,9 +52,6 @@ p2{
 
 a {
   font-family: 'Open Sans', sans-serif;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */
   padding: 20px;
 }
 
