@@ -420,3 +420,9 @@ div.desc {
   float: left;
   
 }
+
+.housecaptainimages {
+  text-align: center;
+  padding: 55px;
+  display: block; 
+}
