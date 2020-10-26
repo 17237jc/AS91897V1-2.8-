@@ -32,14 +32,14 @@ font-family: 'Indie Flower';font-size: 22px;
 h1 {
   font-style: italic;
   color: #000000;
-  font-family: 'Raleway', sans-serif;  
+  font-family: 'Open Sans', sans-serif;  
   text-align: center;
 }
 
 
 p {
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
+  text-align: left;
   margin-left: 50px;
   margin-top: 50px;
   margin-right: 50px;
@@ -47,7 +47,7 @@ p {
 
 p2{
   font-family: 'Open Sans', sans-serif;
-  t
+  
 }
 
 a {
@@ -64,7 +64,7 @@ w3-container {
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -74,7 +74,7 @@ w3-container {
   background-image: linear-gradient(to right, #424242, #212121); 
   
 }
-.stuffgoeshehe {height: 100%;}
+.stuffgoeshehe {height: 66%;}
 
 .topnav {
   background-color: #009ce1;
@@ -248,7 +248,7 @@ w3-row {
 
 
 .footer-purple {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -285,6 +285,7 @@ w3-row {
 .navbar-yellow {
   background-color: #ffe300;
   overflow: hidden;
+  background-image: linear-gradient(to right, #FFE300, #E8B80C); 
 }
 
 .navbar-blue{
@@ -293,18 +294,18 @@ w3-row {
 }
 
 .footer-yellow {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #ffe300;
   color: white;
   text-align: center;
-  
+    background-image: linear-gradient(to right, #E8B80C, #FFE300); 
 }
 
 .footer-blue {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -315,7 +316,7 @@ w3-row {
 }
 
 .footer-pinky {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -326,7 +327,7 @@ w3-row {
 }
 
 .footer-orangey-red {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -337,7 +338,7 @@ w3-row {
 }
 
 .footer-green {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -355,8 +356,10 @@ w3-row {
 }
 
 .container img{
-    height: 12vw;
-    width: 12vw;
+   max-width: 77%;
+    min-width: 77px;
+    height: auto;
+
   
 }
 
@@ -433,4 +436,22 @@ height: auto;
 max-width: 100%;
 text-align: center;
 padding-top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+
+   body { 
+      font-size: 14px;
+   }
+
+}
+
+
+
+@media only screen and (max-width: 460px) {
+
+   body { 
+      font-size: 21px;
+   }
+
 }
